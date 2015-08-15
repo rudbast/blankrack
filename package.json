@@ -1,0 +1,28 @@
+{
+  "name": "blankrack",
+  "version": "1.0.0",
+  "description": "blankrack",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudbast/blankrack.git"
+  },
+  "keywords": [
+    "blankrack"
+  ],
+  "author": "rudolf",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/rudbast/blankrack/issues"
+  },
+  "homepage": "https://github.com/rudbast/blankrack#readme"
+}
