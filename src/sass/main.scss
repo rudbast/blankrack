@@ -54,8 +54,12 @@ $topPad: 50px;
 
     #post-container {
         background-color: #E6E6E6;
-        height: 1000px;
+        height: 650px;
         padding: 0px 20px 0px 20px;
+
+        .post-author {
+            margin-left: 80px;
+        }
 
         article.post {
             text-align: left;
@@ -72,25 +76,42 @@ $topPad: 50px;
             }
 
             .post-container-lower {
-                padding: 10px 20px 10px 20px;
+                padding: 10px 10px 200px 20px;
 
                 hr {
+                    margin-top: 5px;
                     margin-bottom: 10px;
-                }
-
-                article.comment {
-                    padding: 0px 0px 10px 0px;
-                }
-
-                .photo {
-                    padding-right: 50px;
+                    background-color: #CCCCCC;
+                    border: 0 none;
+                    height: 1px;
                 }
 
                 input {
                     background-color: #E2E2E2;
                     border: none;
                     border-radius: 8px;
-                    padding: 5px 20px 5px 20px;
+                    padding-left: 25px;
+                }
+
+                .post-comment {
+                    width: 100%;
+
+                    td {
+                        padding: 5px 10px 5px 5px;
+                    }
+
+                    td.photo {
+                        width: 10%;
+                    }
+
+                    td.word {
+                        width: 90%;
+                        padding-left: 30px;
+                    }
+
+                    tfoot td {
+                        padding-top: 20px;
+                    }
                 }
             }
         }
@@ -119,6 +140,10 @@ $topPad: 50px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+    }
+
+    #ads {
+        display: none;
     }
 }
 

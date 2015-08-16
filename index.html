@@ -55,33 +55,53 @@
                 </aside><!-- /#post-form -->
 
                 <div id="post-container" class="content col-md-7">
-                    <h4>Nopwen</h4>
+                    <h4 class="post-author">Nopwen</h4>
+
                     <article class="post">
+                        <span class="post-author-photo">photo</span>
                         <!-- posts -->
                         <p class="post-date">
                             Yesterday At 8.33 Am
                             <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
                         </p>
 
-                        <img src="assets/img/share-photo.jpg" class="img-responsive" alt="shared photo">
+                        <a href="#">
+                            <img src="assets/img/share-photo.jpg" class="img-responsive" alt="shared photo">
+                        </a>
 
                         <div class="post-container-lower">
                             logo-backpack logo-person logo-share
                             <hr>
 
                             <!-- comment -->
-                            <div class="post-comment">
-                                <article class="comment">
-                                    <span class="photo">photo</span>
-                                    <span class="word">Nice Shot!</span>
-                                </article>
-                            </div><!-- /.post-comment -->
-                            <div class="post-comment-form">
-                                <span class="photo">photo</span>
-                                <input type="text" placeholder="Add a comment...">
-                            </div><!-- /.post-comment-form -->
-                        </div>
+                            <table class="post-comment">
+                                <tbody class="comment">
+                                    <tr>
+                                        <td class="photo">
+                                            photo
+                                        </td>
+                                        <td class="word">
+                                            Nice Shot!
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot class="post-comment-form">
+                                    <tr>
+                                        <td class="photo">
+                                            photo
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" placeholder="Add a comment...">
+                                        </td>
+                                    </tr>
+                                </tfoot><!-- /.post-comment-form -->
+                            </table><!-- /.post-comment -->
+
+                        </div><!-- /.post-container-lower -->
+
                     </article><!-- /.post -->
+
                 </div><!-- /#posts -->
 
                 <div id="post-visit" class="content col-md-3">
@@ -89,25 +109,29 @@
                     <hr>
                     <div class="visit-place">
                         <article>
-                            <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            <a href="#">
+                                <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            </a>
                         </article>
 
                         <article>
-                            <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            <a href="#">
+                                <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            </a>
                         </article>
 
                         <article>
-                            <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            <a href="#">
+                                <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                            </a>
                         </article>
-                    </div>
+                    </div><!-- /.visit-place -->
                 </div><!-- /#visits -->
             </div>
 
-            <div class="col-md-2">
-                <aside id="ads">
-                    <!-- advertisements -->
-                </aside>
-            </div>
+            <aside id="ads" class="col-md-2">
+                <!-- advertisements -->
+            </aside>
         </div><!-- /#main-content -->
 
         <div id="bot-pad">

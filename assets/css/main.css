@@ -32,8 +32,10 @@ body {
       border: none; }
   #main-content #post-container {
     background-color: #E6E6E6;
-    height: 1000px;
+    height: 650px;
     padding: 0px 20px 0px 20px; }
+    #main-content #post-container .post-author {
+      margin-left: 80px; }
     #main-content #post-container article.post {
       text-align: left;
       background-color: #FFFFFF;
@@ -44,18 +46,29 @@ body {
         font-size: 14px;
         color: #989898; }
       #main-content #post-container article.post .post-container-lower {
-        padding: 10px 20px 10px 20px; }
+        padding: 10px 10px 200px 20px; }
         #main-content #post-container article.post .post-container-lower hr {
-          margin-bottom: 10px; }
-        #main-content #post-container article.post .post-container-lower article.comment {
-          padding: 0px 0px 10px 0px; }
-        #main-content #post-container article.post .post-container-lower .photo {
-          padding-right: 50px; }
+          margin-top: 5px;
+          margin-bottom: 10px;
+          background-color: #CCCCCC;
+          border: 0 none;
+          height: 1px; }
         #main-content #post-container article.post .post-container-lower input {
           background-color: #E2E2E2;
           border: none;
           border-radius: 8px;
-          padding: 5px 20px 5px 20px; }
+          padding-left: 25px; }
+        #main-content #post-container article.post .post-container-lower .post-comment {
+          width: 100%; }
+          #main-content #post-container article.post .post-container-lower .post-comment td {
+            padding: 5px 10px 5px 5px; }
+          #main-content #post-container article.post .post-container-lower .post-comment td.photo {
+            width: 10%; }
+          #main-content #post-container article.post .post-container-lower .post-comment td.word {
+            width: 90%;
+            padding-left: 30px; }
+          #main-content #post-container article.post .post-container-lower .post-comment tfoot td {
+            padding-top: 20px; }
   #main-content #post-visit {
     font-family: "Courier New", monospace;
     padding-top: 20px;
@@ -71,6 +84,8 @@ body {
     #main-content #post-visit article {
       padding-top: 10px;
       padding-bottom: 10px; }
+  #main-content #ads {
+    display: none; }
 
 #bot-pad {
   width: 100%;
