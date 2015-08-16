@@ -12,6 +12,19 @@
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/responsiveslides.min.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $(".rslides").responsiveSlides({
+                    auto: true,
+                    pagination: true,
+                    nav: true,
+                    fade: 500,
+                    maxwidth: 800
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="top-pad" class="navbar-fixed-top">
@@ -45,7 +58,7 @@
         </div>
 
         <div id="main-content" class="row">
-            <div class="col-md-10">
+            <div class="col-xs-12 col-md-10">
                 <aside id="post-form" class="content col-md-2">
                     <!-- post journey -->
                     <a class="btn btn-default center-block">
@@ -65,9 +78,13 @@
                             <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
                         </p>
 
-                        <a href="#">
-                            <img src="assets/img/share-photo.jpg" class="img-responsive" alt="shared photo">
-                        </a>
+                        <div class="rslides_container">
+                            <ul class="rslides">
+                                <li><img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1"></li>
+                                <li><img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2"></li>
+                                <li><img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3"></li>
+                            </ul>
+                        </div>
 
                         <div class="post-container-lower">
                             logo-backpack logo-person logo-share
@@ -129,7 +146,7 @@
                 </div><!-- /#visits -->
             </div>
 
-            <aside id="ads" class="col-md-2">
+            <aside id="ads" class="col-xs-0 col-md-2">
                 <!-- advertisements -->
             </aside>
         </div><!-- /#main-content -->
