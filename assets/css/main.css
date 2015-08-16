@@ -43,6 +43,19 @@ body {
         padding: 10px 20px 10px 50px;
         font-size: 14px;
         color: #989898; }
+      #main-content #post-container article.post .post-container-lower {
+        padding: 10px 20px 10px 20px; }
+        #main-content #post-container article.post .post-container-lower hr {
+          margin-bottom: 10px; }
+        #main-content #post-container article.post .post-container-lower article.comment {
+          padding: 0px 0px 10px 0px; }
+        #main-content #post-container article.post .post-container-lower .photo {
+          padding-right: 50px; }
+        #main-content #post-container article.post .post-container-lower input {
+          background-color: #E2E2E2;
+          border: none;
+          border-radius: 8px;
+          padding: 5px 20px 5px 20px; }
   #main-content #post-visit {
     font-family: "Courier New", monospace;
     padding-top: 20px;
@@ -55,6 +68,9 @@ body {
       background-color: #B9B9B9;
       border: 0 none;
       height: 2px; }
+    #main-content #post-visit article {
+      padding-top: 10px;
+      padding-bottom: 10px; }
 
 #bot-pad {
   width: 100%;

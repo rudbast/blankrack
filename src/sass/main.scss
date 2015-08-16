@@ -70,6 +70,29 @@ $topPad: 50px;
                 font-size: 14px;
                 color: #989898;
             }
+
+            .post-container-lower {
+                padding: 10px 20px 10px 20px;
+
+                hr {
+                    margin-bottom: 10px;
+                }
+
+                article.comment {
+                    padding: 0px 0px 10px 0px;
+                }
+
+                .photo {
+                    padding-right: 50px;
+                }
+
+                input {
+                    background-color: #E2E2E2;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 5px 20px 5px 20px;
+                }
+            }
         }
     }
 
@@ -90,6 +113,11 @@ $topPad: 50px;
             background-color: #B9B9B9;
             border: 0 none;
             height: 2px;
+        }
+
+        article {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 }
