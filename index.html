@@ -2,19 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Home - Blankrack</title>
-        <link rel="stylesheet" href="assets/css/reset.css" charset="utf-8">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" charset="utf-8">
-        <link rel="stylesheet" href="assets/css/main.css" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <script src="assets/js/jquery.min.js" charset="utf-8"></script>
-        <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+        <title>Home - Blankrack</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="top-pad" class="container">
+        <div id="top-pad" class="navbar-fixed-top">
             <header>
                 <!-- header content here -->
-                <nav class="navbar navbar-default">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu-extra" aria-expanded="false">
@@ -25,7 +28,7 @@
                             </button>
                             <!-- logo -->
                             <a class="navbar-brand" href="#">Blankrack</a>
-                        </div>
+                        </div><!-- /.navbar-header -->
 
                         <!-- search -->
 
@@ -37,45 +40,49 @@
 
                         <!-- profile photo -->
                     </div>
-                </nav>
+                </nav><!-- /.navbar.navbar-default -->
             </header>
         </div>
 
-        <div id="main-content" class="container-fluid">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="col-md-3">
-                        <aside id="post-form">
-                            <!-- post journey -->
-                            form
-                        </aside><!-- /#post-form -->
-                    </div>
+        <div id="main-content" class="row">
+            <div class="col-md-10">
+                <aside id="post-form" class="content col-md-2">
+                    <!-- post journey -->
+                    <a class="btn btn-default center-block">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        Post your journey!
+                    </a>
+                </aside><!-- /#post-form -->
 
-                    <div class="col-md-6">
-                        <div id="post-container">
-                            <article class="post">
-                                <!-- posts -->
-                                posts
-                            </article><!-- /.post -->
-                        </div><!-- /#posts -->
-                    </div>
+                <div id="post-container" class="content col-md-7">
+                    <h4>Nopwen</h4>
+                    <article class="post">
+                        <!-- posts -->
+                        <p class="post-date">
+                            Yesterday At 8.33 Am
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                        </p>
+                        <img src="assets/img/share-photo.jpg" class="img-responsive" alt="shared photo">
+                    </article><!-- /.post -->
+                </div><!-- /#posts -->
 
-                    <div class="col-md-3">
-                        <div id="post-visit">
-                            visits
-                        </div><!-- /#visits -->
-                    </div>
-                </div>
+                <div id="post-visit" class="content col-md-3">
+                    <h4>Place You May Visit</h4>
+                    <hr>
+                    <div class="visit-place">
 
-                <div class="col-md-2">
-                    <aside id="ads">
-                        <!-- advertisements -->
-                    </aside>
-                </div>
+                    </div>
+                </div><!-- /#visits -->
+            </div>
+
+            <div class="col-md-2">
+                <aside id="ads">
+                    <!-- advertisements -->
+                </aside>
             </div>
         </div><!-- /#main-content -->
 
-        <div id="bot-pad" class="container">
+        <div id="bot-pad">
             <footer>
                 &copy; 2015 Blankrack. All rights reserved.
             </footer>
