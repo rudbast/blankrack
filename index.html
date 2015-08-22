@@ -17,7 +17,7 @@
         <script type="text/javascript">
             $(function() {
                 $(".rslides").responsiveSlides({
-                    auto: true,
+                    auto: false,
                     pagination: true,
                     nav: true,
                     fade: 500,
@@ -43,15 +43,40 @@
                             <a class="navbar-brand" href="#">Blankrack</a>
                         </div><!-- /.navbar-header -->
 
-                        <!-- search -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- search -->
+                            <li>
+                                <form class="col-md-3">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
 
-                        <!-- notification badge -->
+                            <!-- notification badge -->
+                            <li>
+                                <span class="badge">2</span>
+                                <span class="glyphicon glyphicon-flag">Flag</span>
+                            </li>
 
-                        <!-- settings -->
+                            <!-- settings -->
+                            <li>
+                                <span class="glyphicon glyphicon-cog">Cog</span>
+                            </li>
 
-                        <!-- message: welcome home {user} -->
+                            <!-- message: welcome home {user} -->
+                            <li>
+                                <span>Welcome home {$user}</span>
+                            </li>
 
-                        <!-- profile photo -->
+                            <!-- profile photo -->
+                            <li>
+                                <span>Photo</span>
+                            </li>
+                        </ul>
                     </div>
                 </nav><!-- /.navbar.navbar-default -->
             </header>
@@ -60,7 +85,7 @@
         <div id="main-content" class="alt-grid">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-md-10">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="hidden-xs col-sm-3 col-md-2">
@@ -75,26 +100,58 @@
 
                                 <div class="col-sm-6 col-md-7">
                                     <div id="post-container" class="content">
-                                        <h4 class="post-author">Nopwen</h4>
+                                        <div class="post-author">
+                                            <div class="post-author-name">
+                                                Nopwen
+                                            </div>
+                                            <div class="post-author-photo">
+                                                <img src="assets/img/comment-photo-me.png" alt="author">
+                                            </div>
+                                        </div>
 
                                         <article class="post">
-                                            <span class="post-author-photo">photo</span>
                                             <!-- posts -->
                                             <p class="post-date">
                                                 Yesterday At 8.33 Am
                                                 <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
                                             </p>
 
-                                            <div class="rslides_container">
-                                                <ul class="rslides">
-                                                    <li><img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1"></li>
-                                                    <li><img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2"></li>
-                                                    <li><img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3"></li>
-                                                </ul>
+                                            <div class="photo-container">
+                                                <div class="rslides_container">
+                                                    <ul class="rslides">
+                                                        <li><img src="assets/img/share-photo-0.png" class="img-responsive" alt="shared photo 1"></li>
+                                                        <li><img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1"></li>
+                                                        <li><img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2"></li>
+                                                        <li><img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3"></li>
+                                                    </ul>
+                                                </div>
                                             </div>
 
                                             <div class="post-container-lower">
-                                                logo-backpack logo-person logo-share
+                                                <table class="post-share-action">
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-bag.png" alt="per" width="24">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-person.png" alt="recommend" width="24">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-share.png" alt="share" width="24">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                                 <hr>
 
                                                 <!-- comment -->
@@ -102,7 +159,9 @@
                                                     <tbody class="comment">
                                                         <tr>
                                                             <td class="photo">
-                                                                photo
+                                                                <a href="#">
+                                                                    <img src="assets/img/comment-photo-1.png" alt="user1" width="56">
+                                                                </a>
                                                             </td>
                                                             <td class="word">
                                                                 Nice Shot!
@@ -113,7 +172,7 @@
                                                     <tfoot class="post-comment-form">
                                                         <tr>
                                                             <td class="photo">
-                                                                photo
+                                                                <img src="assets/img/comment-photo-me.png" alt="author" width="56">
                                                             </td>
                                                             <td>
                                                                 <input type="text" class="form-control" placeholder="Add a comment...">
@@ -133,25 +192,25 @@
                                         <div class="visit-place">
                                             <article>
                                                 <a href="#">
-                                                    <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
                                                 </a>
                                             </article>
 
                                             <article>
                                                 <a href="#">
-                                                    <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
                                                 </a>
                                             </article>
 
                                             <article>
                                                 <a href="#">
-                                                    <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
                                                 </a>
                                             </article>
 
                                             <article>
                                                 <a href="#">
-                                                    <img src="assets/img/article-photo.jpg" class="img-responsive" alt="article photo">
+                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
                                                 </a>
                                             </article>
                                         </div><!-- /.visit-place -->
@@ -167,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="hidden-xs col-sm-2 col-md-2">
+                    <div class="hidden-xs hidden-sm hidden-md col-lg-2">
                         <aside id="ads">
                         </aside><!-- /#ads -->
                     </div>

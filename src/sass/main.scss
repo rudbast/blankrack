@@ -1,12 +1,7 @@
 $transparentPad: rgba(0, 0, 0, 0.7);
 $courier: "Courier New", monospace;
 $trebhms: "Trebuchet MS", Helvetica, sans-serif;
-
-.alt-grid [class*="col-"] {padding-left:0;padding-right:0}
-.alt-grid .row {margin-left:0;margin-right:0}
-
-/* container adjusted */
-.alt-grid .container-fluid {width:100%;max-width:none;padding:0;}
+$consolas: "Consolas", monospace;
 
 body {
     width: 100%;
@@ -15,7 +10,25 @@ body {
     background-color: #FFFFFF;
 }
 
-$topPad: 50px;
+.alt-grid {
+    [class*="col-"] {
+        padding-left:0;
+        padding-right:0
+    }
+
+    .row {
+        margin-left:0;
+        margin-right:0
+    }
+
+    .container-fluid {
+        width:100%;
+        max-width:none;
+        padding:0;
+    }
+}
+
+$topPad: 110px;
 
 #top-pad {
     width: 100%;
@@ -63,19 +76,32 @@ $topPad: 50px;
         height: 100vh;
         padding-right: 10%;
         padding-left: 10%;
+        font-family: $consolas;
 
         .post-author {
-            margin-left: 80px;
-            padding-top: 10px;
+            margin-left: -8.8%;
+            padding-top: 15px;
+
+            .post-author-name {
+                // font-weight: bold;
+                padding-top: 20px;
+                padding-left: 17%;
+                font-size: 20px;
+                margin-bottom: -45px;
+            }
+
+            .post-author-photo img {
+                width: 16%;
+            }
         }
 
         article.post {
-            text-align: left;
             background-color: #FFFFFF;
+            margin-top: -8.8%;
+            text-align: left;
 
             p.post-date {
                 padding: 10px 20px 10px 50px;
-                // font-family: "Arial";
                 font-size: 14px;
                 color: #989898;
             }
@@ -98,7 +124,15 @@ $topPad: 50px;
                     padding-left: 25px;
                 }
 
-                .post-comment {
+                table.post-share-action {
+                    td {
+                        font-family: monospace;
+                        width: 20px;
+                        text-align: center;
+                    }
+                }
+
+                table.post-comment {
                     width: 100%;
 
                     td {
@@ -125,7 +159,7 @@ $topPad: 50px;
     #post-visit {
         font-family: $courier;
         // position: fixed;
-        padding-top: 20px;
+        padding-top: 30px;
         text-align: center;
         padding-left: 10%;
         padding-right: 10%;
