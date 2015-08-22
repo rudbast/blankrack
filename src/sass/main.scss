@@ -1,7 +1,12 @@
 $transparentPad: rgba(0, 0, 0, 0.7);
+
+/**
+ * fonts
+ */
+$bignoodle: "BigNoodleTitling", Impact;
+$consolas: "Consolas", monospace;
 $courier: "Courier New", monospace;
 $trebhms: "Trebuchet MS", Helvetica, sans-serif;
-$consolas: "Consolas", monospace;
 
 body {
     width: 100%;
@@ -28,21 +33,51 @@ body {
     }
 }
 
-$topPad: 110px;
+$topPad: 130px;
 
-#top-pad {
+header {
     width: 100%;
     background-color: $transparentPad;
     padding-bottom: $topPad + 20px;
 
-    header {
+    nav {
         width: 100%;
+        font-family: $courier;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
 
-        nav {
-            width: 100%;
-            font-family: $courier;
-            font-weight: bold;
+        .nav-greeting {
+            color: #FFFFFF;
+            font-weight: normal;
+            font-family: $bignoodle;
+            font-size: 18px;
+            text-transform: uppercase;
+
+            .nav-greeting-user {
+                text-align: right;
+            }
         }
+
+        .badge {
+            background-color: #F2FF00;
+            color: #000000;
+        }
+
+        #profile-photo {
+            float: right;
+            width: 128px;
+            margin-top: -50px;
+        }
+
+        .nav {
+            margin-top: 50px;
+            margin-bottom: -50px;
+        }
+    }
+
+    .navbar {
+        min-height: 130px;
     }
 }
 
@@ -53,10 +88,10 @@ $topPad: 110px;
 
     #post-form {
         padding-top: 40px;
-        // position: fixed;
+        position: fixed;
         height: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 1%;
+        padding-right: 19%;
 
         a {
             background: linear-gradient(#FFFFFF, #DEDEDE);
@@ -80,14 +115,12 @@ $topPad: 110px;
 
         .post-author {
             margin-left: -8.8%;
-            padding-top: 15px;
+            padding-top: 10px;
 
             .post-author-name {
-                // font-weight: bold;
                 padding-top: 20px;
-                padding-left: 17%;
-                font-size: 20px;
-                margin-bottom: -45px;
+                padding-left: 16.55%;
+                margin-bottom: -50px;
             }
 
             .post-author-photo img {
@@ -126,7 +159,7 @@ $topPad: 110px;
 
                 table.post-share-action {
                     td {
-                        font-family: monospace;
+                        font-family: $courier;
                         width: 20px;
                         text-align: center;
                     }
@@ -177,7 +210,17 @@ $topPad: 110px;
         }
 
         article {
-            padding: 10px 0px 10px 0px
+            padding: 10px 0px 10px 0px;
+
+            .visit-place {
+            }
+
+            .visit-author {
+                width: 56px;
+                margin-left: -13%;
+                margin-top: -65px;
+                padding-bottom: 10px;
+            }
         }
     }
 
@@ -224,5 +267,15 @@ $topPad: 110px;
         float: left;
         width: 100%;
         border: 0;
+    }
+}
+
+.rslides_nav.rslides1_nav {
+    .prev {
+
+    }
+
+    .next {
+
     }
 }

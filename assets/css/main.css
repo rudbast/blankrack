@@ -1,3 +1,6 @@
+/**
+ * fonts
+ */
 body {
   width: 100%;
   height: 100%;
@@ -17,26 +20,47 @@ body {
   max-width: none;
   padding: 0; }
 
-#top-pad {
+header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  padding-bottom: 130px; }
-  #top-pad header {
-    width: 100%; }
-    #top-pad header nav {
-      width: 100%;
-      font-family: "Courier New", monospace;
-      font-weight: bold; }
+  padding-bottom: 150px; }
+  header nav {
+    width: 100%;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px; }
+    header nav .nav-greeting {
+      color: #FFFFFF;
+      font-weight: normal;
+      font-family: "BigNoodleTitling", Impact;
+      font-size: 18px;
+      text-transform: uppercase; }
+      header nav .nav-greeting .nav-greeting-user {
+        text-align: right; }
+    header nav .badge {
+      background-color: #F2FF00;
+      color: #000000; }
+    header nav #profile-photo {
+      float: right;
+      width: 128px;
+      margin-top: -50px; }
+    header nav .nav {
+      margin-top: 50px;
+      margin-bottom: -50px; }
+  header .navbar {
+    min-height: 130px; }
 
 #main-content {
   width: 100%;
   height: 100%;
-  margin-top: 100px; }
+  margin-top: 120px; }
   #main-content #post-form {
     padding-top: 40px;
+    position: fixed;
     height: 100%;
-    padding-left: 10%;
-    padding-right: 10%; }
+    padding-left: 1%;
+    padding-right: 19%; }
     #main-content #post-form a {
       background: linear-gradient(#FFFFFF, #DEDEDE);
       border: none;
@@ -53,12 +77,11 @@ body {
     font-family: "Consolas", monospace; }
     #main-content #post-container .post-author {
       margin-left: -8.8%;
-      padding-top: 15px; }
+      padding-top: 10px; }
       #main-content #post-container .post-author .post-author-name {
         padding-top: 20px;
-        padding-left: 17%;
-        font-size: 20px;
-        margin-bottom: -45px; }
+        padding-left: 16.55%;
+        margin-bottom: -50px; }
       #main-content #post-container .post-author .post-author-photo img {
         width: 16%; }
     #main-content #post-container article.post {
@@ -83,7 +106,7 @@ body {
           border-radius: 8px;
           padding-left: 25px; }
         #main-content #post-container article.post .post-container-lower table.post-share-action td {
-          font-family: monospace;
+          font-family: "Courier New", monospace;
           width: 20px;
           text-align: center; }
         #main-content #post-container article.post .post-container-lower table.post-comment {
@@ -113,6 +136,11 @@ body {
       height: 2px; }
     #main-content #post-visit article {
       padding: 10px 0px 10px 0px; }
+      #main-content #post-visit article .visit-author {
+        width: 56px;
+        margin-left: -13%;
+        margin-top: -65px;
+        padding-bottom: 10px; }
   #main-content #ads {
     display: none; }
 

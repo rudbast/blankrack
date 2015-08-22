@@ -27,60 +27,68 @@
         </script>
     </head>
     <body>
-        <div id="top-pad" class="navbar-fixed-top">
-            <header>
-                <!-- header content here -->
-                <nav class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu-extra" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <!-- logo -->
-                            <a class="navbar-brand" href="#">Blankrack</a>
-                        </div><!-- /.navbar-header -->
+        <header class="navbar-fixed-top">
+            <!-- header content here -->
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu-extra" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- logo -->
+                        <a class="navbar-brand" href="./">
+                            <img src="assets/img/app/icon-brand.png" alt="blankrack" width="114">
+                        </a>
+                    </div><!-- /.navbar-header -->
 
-                        <ul class="nav navbar-nav navbar-right">
-                            <!-- search -->
-                            <li>
-                                <form class="col-md-3">
-                                    <div class="input-group">
-                                        <input type="search" class="form-control" placeholder="Search">
-                                        <span class="input-group-btn">
-                                            <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </li>
-
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
                             <!-- notification badge -->
-                            <li>
+                            <a href="#">
                                 <span class="badge">2</span>
-                                <span class="glyphicon glyphicon-flag">Flag</span>
-                            </li>
-
+                                <img src="assets/img/app/icon-flag.png" class="nav-icon" alt="settings" width="18">
+                            </a>
+                        </li>
+                        <li>
                             <!-- settings -->
-                            <li>
-                                <span class="glyphicon glyphicon-cog">Cog</span>
-                            </li>
-
+                            <a href="#" class="xs-hidden">
+                                <img src="assets/img/app/icon-cog.png" class="nav-icon" alt="settings" width="24">
+                            </a>
+                        </li>
+                        <li>
                             <!-- message: welcome home {user} -->
-                            <li>
-                                <span>Welcome home {$user}</span>
-                            </li>
+                            <div class="nav-greeting">
+                                Welcome home
+                                <div class="nav-greeting-user">
+                                    Nopwen<span>!</span>
+                                </div>
+                            </div>
+                        </li>
 
+                        <li>
                             <!-- profile photo -->
-                            <li>
-                                <span>Photo</span>
-                            </li>
-                        </ul>
-                    </div>
-                </nav><!-- /.navbar.navbar-default -->
-            </header>
-        </div>
+                            <a href="#">
+                                <img src="assets/img/photo-profile.png" id="profile-photo" class="img-responsive" alt="profile picture">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse" id="navbar-menu-extra">
+                        <form action="" class="navbar-form navbar-right">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="where are you going?">
+                                <span class="input-group-btn">
+                                    <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav><!-- /.navbar.navbar-default -->
+        </header><!-- /#top-pad -->
 
         <div id="main-content" class="alt-grid">
             <div class="container-fluid">
@@ -102,10 +110,12 @@
                                     <div id="post-container" class="content">
                                         <div class="post-author">
                                             <div class="post-author-name">
-                                                Nopwen
+                                                <h4>Nopwen</h4>
                                             </div>
                                             <div class="post-author-photo">
-                                                <img src="assets/img/comment-photo-me.png" alt="author">
+                                                <a href="#">
+                                                    <img src="assets/img/comment-photo-me.png" alt="author">
+                                                </a>
                                             </div>
                                         </div>
 
@@ -133,21 +143,21 @@
                                                         <td>3</td>
                                                         <td>
                                                             <a href="#">
-                                                                <img src="assets/img/app/icon-bag.png" alt="per" width="24">
+                                                                <img src="assets/img/app/icon-bag.png" alt="per" width="30">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>0</td>
                                                         <td>
                                                             <a href="#">
-                                                                <img src="assets/img/app/icon-person.png" alt="recommend" width="24">
+                                                                <img src="assets/img/app/icon-person.png" alt="recommend" width="30">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>3</td>
                                                         <td>
                                                             <a href="#">
-                                                                <img src="assets/img/app/icon-share.png" alt="share" width="24">
+                                                                <img src="assets/img/app/icon-share.png" alt="share" width="30">
                                                             </a>
                                                         </td>
                                                     </tr>
@@ -191,27 +201,55 @@
                                         <hr>
                                         <div class="visit-place">
                                             <article>
-                                                <a href="#">
-                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
-                                                </a>
+                                                <div class="visit-place">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                    </a>
+                                                </div>
+                                                <div class="visit-author">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                    </a>
+                                                </div>
                                             </article>
 
                                             <article>
-                                                <a href="#">
-                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
-                                                </a>
+                                                <div class="visit-place">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                    </a>
+                                                </div>
+                                                <div class="visit-author">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                    </a>
+                                                </div>
                                             </article>
 
                                             <article>
-                                                <a href="#">
-                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
-                                                </a>
+                                                <div class="visit-place">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                    </a>
+                                                </div>
+                                                <div class="visit-author">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                    </a>
+                                                </div>
                                             </article>
 
                                             <article>
-                                                <a href="#">
-                                                    <img src="assets/img/photo-visit.png" class="img-responsive" alt="article photo">
-                                                </a>
+                                                <div class="visit-place">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                    </a>
+                                                </div>
+                                                <div class="visit-author">
+                                                    <a href="#">
+                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                    </a>
+                                                </div>
                                             </article>
                                         </div><!-- /.visit-place -->
 
@@ -219,19 +257,19 @@
                                             <footer>
                                                 Copyright &copy; 2015 Blankrack All Rights Reserved.
                                             </footer>
-                                        </div>
+                                        </div><!-- /#bot-pad -->
                                     </div><!-- /#visits -->
                                 </div>
-                            </div>
-                        </div>
+                            </div><!-- /.row -->
+                        </div><!-- /.container-fluid -->
                     </div>
 
                     <div class="hidden-xs hidden-sm hidden-md col-lg-2">
                         <aside id="ads">
                         </aside><!-- /#ads -->
                     </div>
-                </div>
-            </div>
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
         </div><!-- /#main-content -->
     </body>
 </html>
