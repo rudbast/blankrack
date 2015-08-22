@@ -17,12 +17,12 @@ body {
 
 #main-content {
   width: 100%;
-  margin-top: 50px; }
-  #main-content .row {
-    width: 100%;
-    height: 100%; }
+  height: 100%;
+  margin-top: 40px; }
   #main-content #post-form {
-    padding-top: 30px; }
+    padding-top: 40px;
+    position: fixed;
+    height: 100%; }
     #main-content #post-form a {
       background: linear-gradient(#FFFFFF, #DEDEDE);
       border: none;
@@ -32,10 +32,10 @@ body {
       border: none; }
   #main-content #post-container {
     background-color: #E6E6E6;
-    height: 650px;
-    padding: 0px 20px 0px 20px; }
+    height: 100%; }
     #main-content #post-container .post-author {
-      margin-left: 80px; }
+      margin-left: 80px;
+      padding-top: 10px; }
     #main-content #post-container article.post {
       text-align: left;
       background-color: #FFFFFF;
@@ -82,23 +82,15 @@ body {
       border: 0 none;
       height: 2px; }
     #main-content #post-visit article {
-      padding-top: 10px;
-      padding-bottom: 10px; }
+      padding: 10px 0px 10px 0px; }
   #main-content #ads {
     display: none; }
 
 #bot-pad {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px 0px 0px 0px;
-  bottom: 0;
-  position: fixed; }
+  width: 100%; }
   #bot-pad footer {
     width: 100%;
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: right;
-    padding: 20px 20px 20px 0px; }
+    font-family: "Trebuchet MS", Helvetica, sans-serif; }
 
 .rslides {
   position: relative;

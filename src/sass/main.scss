@@ -29,16 +29,13 @@ $topPad: 50px;
 
 #main-content {
     width: 100%;
-    // position: fixed;
-    margin-top: $topPad;
-
-    .row {
-        width: 100%;
-        height: 100%;
-    }
+    height: 100%;
+    margin-top: $topPad - 10px;
 
     #post-form {
-        padding-top: 30px;
+        padding-top: 40px;
+        position: fixed;
+        height: 100%;
 
         a {
             background: linear-gradient(#FFFFFF, #DEDEDE);
@@ -54,11 +51,11 @@ $topPad: 50px;
 
     #post-container {
         background-color: #E6E6E6;
-        height: 650px;
-        padding: 0px 20px 0px 20px;
+        height: 100%;
 
         .post-author {
             margin-left: 80px;
+            padding-top: 10px;
         }
 
         article.post {
@@ -119,7 +116,6 @@ $topPad: 50px;
 
     #post-visit {
         font-family: $courier;
-        // right: 0;
         // position: fixed;
         padding-top: 20px;
         text-align: center;
@@ -137,8 +133,7 @@ $topPad: 50px;
         }
 
         article {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px 0px 10px 0px
         }
     }
 
@@ -149,17 +144,10 @@ $topPad: 50px;
 
 #bot-pad {
     width: 100%;
-    background-color: $transparentPad;
-    padding: 20px 0px 0px 0px;
-    bottom: 0;
-    position: fixed;
 
     footer {
         width: 100%;
-        background-color: #000000;
-        color: #FFFFFF;
-        text-align: right;
-        padding: 20px 20px 20px 0px;
+        font-family: $trebhms;
     }
 }
 
