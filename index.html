@@ -8,23 +8,9 @@
 
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/ideal-image-slider.css">
+        <link rel="stylesheet" href="assets/css/themes/default/default.css">
         <link rel="stylesheet" href="assets/css/main.css">
-
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/responsiveslides.min.js"></script>
-
-        <script type="text/javascript">
-            $(function() {
-                $(".rslides").responsiveSlides({
-                    auto: false,
-                    pagination: true,
-                    nav: true,
-                    fade: 500,
-                    maxwidth: 800
-                });
-            });
-        </script>
     </head>
     <body>
         <header class="navbar-fixed-top">
@@ -54,11 +40,11 @@
                         </li>
                         <li>
                             <!-- settings -->
-                            <a href="#" class="xs-hidden">
+                            <a href="#">
                                 <img src="assets/img/app/icon-cog.png" class="nav-icon" alt="settings" width="24">
                             </a>
                         </li>
-                        <li>
+                        <li class="hidden-xs">
                             <!-- message: welcome home {user} -->
                             <div class="nav-greeting">
                                 Welcome home
@@ -68,7 +54,7 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="hidden-xs">
                             <!-- profile photo -->
                             <a href="#">
                                 <img src="assets/img/photo-profile.png" id="profile-photo" class="img-responsive" alt="profile picture">
@@ -107,92 +93,94 @@
                                 </div>
 
                                 <div class="col-sm-6 col-md-7">
-                                    <div id="post-container" class="content">
-                                        <div class="post-author">
-                                            <div class="post-author-name">
-                                                <h4>Nopwen</h4>
-                                            </div>
-                                            <div class="post-author-photo">
-                                                <a href="#">
-                                                    <img src="assets/img/comment-photo-me.png" alt="author">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <article class="post">
-                                            <!-- posts -->
-                                            <p class="post-date">
-                                                Yesterday At 8.33 Am
-                                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                            </p>
-
-                                            <div class="photo-container">
-                                                <div class="rslides_container">
-                                                    <ul class="rslides">
-                                                        <li><img src="assets/img/share-photo-0.png" class="img-responsive" alt="shared photo 1"></li>
-                                                        <li><img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1"></li>
-                                                        <li><img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2"></li>
-                                                        <li><img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3"></li>
-                                                    </ul>
+                                    <div id="post-container">
+                                        <div class="posts content">
+                                            <div class="post-author">
+                                                <div class="post-author-name">
+                                                    <p>Nopwen</p>
                                                 </div>
-                                            </div>
+                                                <div class="post-author-photo">
+                                                    <a href="#">
+                                                        <img src="assets/img/comment-photo-me.png" alt="author">
+                                                    </a>
+                                                </div>
+                                            </div><!-- /.post-author -->
 
-                                            <div class="post-container-lower">
-                                                <table class="post-share-action">
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img src="assets/img/app/icon-bag.png" alt="per" width="30">
-                                                            </a>
-                                                        </td>
-                                                        <td></td>
-                                                        <td>0</td>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img src="assets/img/app/icon-person.png" alt="recommend" width="30">
-                                                            </a>
-                                                        </td>
-                                                        <td></td>
-                                                        <td>3</td>
-                                                        <td>
-                                                            <a href="#">
-                                                                <img src="assets/img/app/icon-share.png" alt="share" width="30">
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <hr>
+                                            <article class="post">
+                                                <!-- posts -->
+                                                <p class="post-date">
+                                                    Yesterday At 8.33 Am
+                                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                                </p>
 
-                                                <!-- comment -->
-                                                <table class="post-comment">
-                                                    <tbody class="comment">
+                                                <div class="photo-container">
+                                                    <!-- <div class="rslides_container"> -->
+                                                        <!-- <ul class="rslides"> -->
+                                                        <img src="assets/img/share-photo-0.png" class="img-responsive" alt="shared photo 1">
+                                                        <img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1">
+                                                        <img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2">
+                                                        <img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3">
+                                                        <!-- </ul> -->
+                                                    <!-- </div> -->
+                                                </div>
+
+                                                <div class="post-container-lower">
+                                                    <table class="post-share-action">
                                                         <tr>
-                                                            <td class="photo">
+                                                            <td>3</td>
+                                                            <td>
                                                                 <a href="#">
-                                                                    <img src="assets/img/comment-photo-1.png" alt="user1" width="56">
+                                                                    <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
                                                                 </a>
                                                             </td>
-                                                            <td class="word">
-                                                                Nice Shot!
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-
-                                                    <tfoot class="post-comment-form">
-                                                        <tr>
-                                                            <td class="photo">
-                                                                <img src="assets/img/comment-photo-me.png" alt="author" width="56">
-                                                            </td>
+                                                            <td></td>
+                                                            <td>0</td>
                                                             <td>
-                                                                <input type="text" class="form-control" placeholder="Add a comment...">
+                                                                <a href="#">
+                                                                    <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
+                                                                </a>
+                                                            </td>
+                                                            <td></td>
+                                                            <td>3</td>
+                                                            <td>
+                                                                <a href="#">
+                                                                    <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
+                                                                </a>
                                                             </td>
                                                         </tr>
-                                                    </tfoot><!-- /.post-comment-form -->
-                                                </table><!-- /.post-comment -->
-                                            </div><!-- /.post-container-lower -->
-                                        </article><!-- /.post -->
-                                    </div><!-- /#posts -->
+                                                    </table>
+                                                    <hr>
+
+                                                    <!-- comment -->
+                                                    <table class="post-comment">
+                                                        <tbody class="comment">
+                                                            <tr>
+                                                                <td class="photo">
+                                                                    <a href="#">
+                                                                        <img src="assets/img/comment-photo-1.png" class="comment-photo" alt="user1">
+                                                                    </a>
+                                                                </td>
+                                                                <td class="word">
+                                                                    Nice Shot!
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+
+                                                        <tfoot class="post-comment-form">
+                                                            <tr>
+                                                                <td class="photo">
+                                                                    <img src="assets/img/comment-photo-me.png" class="comment-photo" alt="author">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control" maxlength="140" placeholder="Add a comment...">
+                                                                </td>
+                                                            </tr>
+                                                        </tfoot><!-- /.post-comment-form -->
+                                                    </table><!-- /.post-comment -->
+                                                </div><!-- /.post-container-lower -->
+                                            </article><!-- /.post -->
+                                        </div><!-- /.posts.content -->
+                                    </div><!-- /#post-container -->
                                 </div>
 
                                 <div class="hidden-xs col-sm-3 col-md-3">
@@ -264,12 +252,24 @@
                         </div><!-- /.container-fluid -->
                     </div>
 
-                    <div class="hidden-xs hidden-sm hidden-md col-lg-2">
+                    <div class="visible-lg col-lg-2">
                         <aside id="ads">
                         </aside><!-- /#ads -->
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
         </div><!-- /#main-content -->
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/ideal-image-slider.min.js"></script>
+        <script type="text/javascript">
+            var slider = new IdealImageSlider.Slider({
+                selector: ".photo-container",
+                height: 275,
+                interval: 100000,
+            });
+            slider.start();
+        </script>
     </body>
 </html>
