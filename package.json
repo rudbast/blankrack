@@ -4,7 +4,8 @@
   "description": "blankrack",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "video.js": "^4.12.14"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
