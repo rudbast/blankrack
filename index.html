@@ -20,7 +20,7 @@
     <body>
         <header class="navbar-fixed-top">
             <!-- header content here -->
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu-extra" aria-expanded="false">
@@ -31,322 +31,340 @@
                         </button>
                         <!-- logo -->
                         <a class="navbar-brand" href="./">
-                            <img src="assets/img/app/icon-brand.png" alt="blankrack" width="114">
+                            <img src="assets/img/app/icon-brand.png" alt="blankrack" width="96">
                         </a>
                     </div><!-- /.navbar-header -->
 
-                    <ul class="nav navbar-nav pull-right">
-                        <li>
-                            <!-- notification badge -->
-                            <a href="#">
-                                <span class="badge">2</span>
-                                <img src="assets/img/app/icon-flag.png" class="nav-icon" alt="settings" width="18">
-                            </a>
-                        </li>
-                        <li>
-                            <!-- settings -->
-                            <a href="#">
-                                <img src="assets/img/app/icon-cog.png" class="nav-icon" alt="settings" width="24">
-                            </a>
-                        </li>
-                        <li class="hidden-xs">
-                            <!-- message: welcome home {user} -->
-                            <div class="nav-greeting">
-                                Welcome home
-                                <div class="nav-greeting-user">
-                                    Nopwen<span>!</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="hidden-xs">
-                            <!-- profile photo -->
-                            <a href="#">
-                                <img src="assets/img/photo-profile.png" id="profile-photo" class="img-responsive" alt="profile picture">
-                            </a>
-                        </li>
-                    </ul>
-
                     <div class="collapse navbar-collapse" id="navbar-menu-extra">
-                        <form action="" class="navbar-form navbar-right">
-                            <div class="input-group">
-                                <input type="search" class="form-control" placeholder="where are you going?">
-                                <span class="input-group-btn">
-                                    <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                </span>
-                            </div>
-                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control input-sm" placeholder="where are you going?">
+                                        <span class="input-group-btn">
+                                            <button class="btn input-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>
+                                <!-- notification badge -->
+                                <a href="#">
+                                    <span class="badge">2</span>
+                                    <img src="assets/img/app/icon-flag.png" class="nav-icon" alt="settings" width="12">
+                                </a>
+                            </li>
+                            <li>
+                                <!-- settings -->
+                                <a href="#">
+                                    <img src="assets/img/app/icon-cog.png" class="nav-icon" alt="settings" width="18">
+                                </a>
+                            </li>
+
+                            <li class="hidden-xs">
+                                <!-- profile photo -->
+                                <a href="#">
+                                    <img src="assets/img/photo-profile.png" id="profile-photo" class="img-responsive" alt="profile picture">
+                                </a>
+                            </li>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav><!-- /.navbar.navbar-default -->
-        </header><!-- /#top-pad -->
 
-        <div id="main-content" class="alt-grid">
+            <div class="white-pad">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="lightgray-pad"></div>
+
+            <!-- message: welcome home {user} -->
+            <div class="nav-greeting">
+                Welcome home Nopwen!
+            </div>
+        </header>
+
+        <div class="main-content alt-grid">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="hidden-xs col-sm-3 col-md-2">
-                                    <aside id="post-form" class="content">
-                                        <!-- post journey -->
-                                        <a class="btn btn-default center-block">
-                                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                                            Post your journey!
-                                        </a>
-                                    </aside><!-- /#post-form -->
-                                </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                        <div class="row">
+                            <div class="hidden-xs hidden-sm col-md-2">
+                                <aside class="post-form">
+                                    <!-- post journey -->
+                                    <a class="btn btn-default center-block">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                        Post your journey!
+                                    </a>
+                                </aside><!-- /.post-form -->
+                            </div>
 
-                                <div class="col-sm-6 col-md-7">
-                                    <div id="post-container">
-                                        <div class="posts content">
-                                            <div class="post-author">
-                                                <div class="post-author-name">
-                                                    <p>Nopwen</p>
+                            <div class="col-sm-8 col-md-7">
+                                <div class="post-container">
+                                    <div class="posts">
+                                        <div class="post-author">
+                                            <div class="post-author-name">
+                                                <p>Nopwen</p>
+                                            </div>
+                                            <div class="post-author-photo">
+                                                <a href="#">
+                                                    <img src="assets/img/comment-photo-me.png" alt="author">
+                                                </a>
+                                            </div>
+                                        </div><!-- /.post-author -->
+
+                                        <article class="post">
+                                            <!-- posts -->
+                                            <p class="post-date">
+                                                Today At 10.33 Pm
+                                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                            </p>
+
+                                            <div class="multimedia-container">
+                                                <div class="video-container embed-responsive embed-responsive-16by9">
+                                                    <video class="video-js vjs-default-skin vjs-big-play-centered"
+                                                        controls preload="auto"
+                                                        width="100%" height="300"
+                                                        poster="http://video-js.zencoder.com/oceans-clip.png"
+                                                        data-setup='{"example_option":true}'>
+                                                        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                                        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                                                    </video>
                                                 </div>
-                                                <div class="post-author-photo">
-                                                    <a href="#">
-                                                        <img src="assets/img/comment-photo-me.png" alt="author">
-                                                    </a>
-                                                </div>
-                                            </div><!-- /.post-author -->
+                                            </div>
 
-                                            <article class="post">
-                                                <!-- posts -->
-                                                <p class="post-date">
-                                                    Today At 10.33 Pm
-                                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                                </p>
+                                            <div class="post-container-lower">
+                                                <table class="post-share-action">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>7</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr>
 
-                                                <div class="multimedia-container">
-                                                    <div class="video-container embed-responsive embed-responsive-16by9">
-                                                        <video class="video-js vjs-default-skin vjs-big-play-centered"
-                                                            controls preload="auto"
-                                                            width="100%" height="300"
-                                                            poster="http://video-js.zencoder.com/oceans-clip.png"
-                                                            data-setup='{"example_option":true}'>
-                                                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-                                                            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                                                        </video>
-                                                    </div>
-                                                </div>
-
-                                                <div class="post-container-lower">
-                                                    <table class="post-share-action">
+                                                <!-- comment -->
+                                                <table class="post-comment">
+                                                    <tbody class="comment">
                                                         <tr>
-                                                            <td>1</td>
-                                                            <td>
+                                                            <td class="photo">
                                                                 <a href="#">
-                                                                    <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
+                                                                    <img src="assets/img/comment-photo-1.png" class="comment-photo" alt="user1">
                                                                 </a>
                                                             </td>
-                                                            <td></td>
-                                                            <td>0</td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
-                                                                </a>
-                                                            </td>
-                                                            <td></td>
-                                                            <td>7</td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
-                                                                </a>
+                                                            <td class="word">
+                                                                Awesome dude.
                                                             </td>
                                                         </tr>
-                                                    </table>
-                                                    <hr>
+                                                    </tbody>
 
-                                                    <!-- comment -->
-                                                    <table class="post-comment">
-                                                        <tbody class="comment">
-                                                            <tr>
-                                                                <td class="photo">
-                                                                    <a href="#">
-                                                                        <img src="assets/img/comment-photo-1.png" class="comment-photo" alt="user1">
-                                                                    </a>
-                                                                </td>
-                                                                <td class="word">
-                                                                    Awesome dude.
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-
-                                                        <tfoot class="post-comment-form">
-                                                            <tr>
-                                                                <td class="photo">
-                                                                    <img src="assets/img/comment-photo-me.png" class="comment-photo" alt="author">
-                                                                </td>
-                                                                <td>
-                                                                    <input type="text" class="form-control" maxlength="140" placeholder="Add a comment...">
-                                                                </td>
-                                                            </tr>
-                                                        </tfoot><!-- /.post-comment-form -->
-                                                    </table><!-- /.post-comment -->
-                                                </div><!-- /.post-container-lower -->
-                                            </article><!-- /.post -->
-                                        </div><!-- /.posts.content -->
-
-                                        <div class="posts content">
-                                            <div class="post-author">
-                                                <div class="post-author-name">
-                                                    <p>Nopwen</p>
-                                                </div>
-                                                <div class="post-author-photo">
-                                                    <a href="#">
-                                                        <img src="assets/img/comment-photo-me.png" alt="author">
-                                                    </a>
-                                                </div>
-                                            </div><!-- /.post-author -->
-
-                                            <article class="post">
-                                                <!-- posts -->
-                                                <p class="post-date">
-                                                    Yesterday At 8.33 Am
-                                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                                </p>
-
-                                                <div class="multimedia-container">
-                                                    <div class="photo-container">
-                                                        <img src="assets/img/share-photo-0.png" class="img-responsive" alt="shared photo 1">
-                                                        <img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1">
-                                                        <img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2">
-                                                        <img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3">
-                                                    </div>
-                                                </div>
-
-                                                <div class="post-container-lower">
-                                                    <table class="post-share-action">
+                                                    <tfoot class="post-comment-form">
                                                         <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
-                                                                </a>
+                                                            <td class="photo">
+                                                                <img src="assets/img/comment-photo-me.png" class="comment-photo" alt="author">
                                                             </td>
-                                                            <td></td>
-                                                            <td>0</td>
                                                             <td>
-                                                                <a href="#">
-                                                                    <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
-                                                                </a>
-                                                            </td>
-                                                            <td></td>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
-                                                                </a>
+                                                                <input type="text" class="form-control" maxlength="140" placeholder="Add a comment...">
                                                             </td>
                                                         </tr>
-                                                    </table>
-                                                    <hr>
+                                                    </tfoot><!-- /.post-comment-form -->
+                                                </table><!-- /.post-comment -->
+                                            </div><!-- /.post-container-lower -->
+                                        </article><!-- /.post -->
+                                    </div><!-- /.posts.content -->
 
-                                                    <!-- comment -->
-                                                    <table class="post-comment">
-                                                        <tbody class="comment">
-                                                            <tr>
-                                                                <td class="photo">
-                                                                    <a href="#">
-                                                                        <img src="assets/img/comment-photo-1.png" class="comment-photo" alt="user1">
-                                                                    </a>
-                                                                </td>
-                                                                <td class="word">
-                                                                    Nice Shot!
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
+                                    <div class="posts content">
+                                        <div class="post-author">
+                                            <div class="post-author-name">
+                                                <p>Nopwen</p>
+                                            </div>
+                                            <div class="post-author-photo">
+                                                <a href="#">
+                                                    <img src="assets/img/comment-photo-me.png" alt="author">
+                                                </a>
+                                            </div>
+                                        </div><!-- /.post-author -->
 
-                                                        <tfoot class="post-comment-form">
-                                                            <tr>
-                                                                <td class="photo">
-                                                                    <img src="assets/img/comment-photo-me.png" class="comment-photo" alt="author">
-                                                                </td>
-                                                                <td>
-                                                                    <input type="text" class="form-control" maxlength="140" placeholder="Add a comment...">
-                                                                </td>
-                                                            </tr>
-                                                        </tfoot><!-- /.post-comment-form -->
-                                                    </table><!-- /.post-comment -->
-                                                </div><!-- /.post-container-lower -->
-                                            </article><!-- /.post -->
-                                        </div><!-- /.posts.content -->
-                                    </div><!-- /#post-container -->
-                                </div>
+                                        <article class="post">
+                                            <!-- posts -->
+                                            <p class="post-date">
+                                                Yesterday At 8.33 Am
+                                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                            </p>
 
-                                <div class="hidden-xs col-sm-3 col-md-3">
-                                    <div id="post-visit" class="content">
-                                        <h4>Place You May Visit</h4>
-                                        <hr>
-                                        <div class="visit-place">
-                                            <article>
-                                                <div class="visit-place">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
-                                                    </a>
+                                            <div class="multimedia-container">
+                                                <div class="photo-container">
+                                                    <img src="assets/img/share-photo-0.png" class="img-responsive" alt="shared photo 1">
+                                                    <img src="assets/img/share-photo-1.jpg" class="img-responsive" alt="shared photo 1">
+                                                    <img src="assets/img/share-photo-2.jpg" class="img-responsive" alt="shared photo 2">
+                                                    <img src="assets/img/share-photo-3.jpg" class="img-responsive" alt="shared photo 3">
                                                 </div>
-                                                <div class="visit-author">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
-                                                    </a>
-                                                </div>
-                                            </article>
+                                            </div>
 
-                                            <article>
-                                                <div class="visit-place">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
-                                                    </a>
-                                                </div>
-                                                <div class="visit-author">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
-                                                    </a>
-                                                </div>
-                                            </article>
+                                            <div class="post-container-lower">
+                                                <table class="post-share-action">
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
+                                                            </a>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr>
 
-                                            <article>
-                                                <div class="visit-place">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
-                                                    </a>
-                                                </div>
-                                                <div class="visit-author">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
-                                                    </a>
-                                                </div>
-                                            </article>
+                                                <!-- comment -->
+                                                <table class="post-comment">
+                                                    <tbody class="comment">
+                                                        <tr>
+                                                            <td class="photo">
+                                                                <a href="#">
+                                                                    <img src="assets/img/comment-photo-1.png" class="comment-photo" alt="user1">
+                                                                </a>
+                                                            </td>
+                                                            <td class="word">
+                                                                Nice Shot!
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
 
-                                            <article>
-                                                <div class="visit-place">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
-                                                    </a>
-                                                </div>
-                                                <div class="visit-author">
-                                                    <a href="#">
-                                                        <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
-                                                    </a>
-                                                </div>
-                                            </article>
-                                        </div><!-- /.visit-place -->
+                                                    <tfoot class="post-comment-form">
+                                                        <tr>
+                                                            <td class="photo">
+                                                                <img src="assets/img/comment-photo-me.png" class="comment-photo" alt="author">
+                                                            </td>
+                                                            <td>
+                                                                <input type="text" class="form-control" maxlength="140" placeholder="Add a comment...">
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot><!-- /.post-comment-form -->
+                                                </table><!-- /.post-comment -->
+                                            </div><!-- /.post-container-lower -->
+                                        </article><!-- /.post -->
+                                    </div><!-- /.posts.content -->
+                                </div><!-- /.post-container -->
+                            </div>
 
-                                        <div id="bot-pad">
-                                            <footer>
-                                                Copyright &copy; 2015 Blankrack All Rights Reserved.
-                                            </footer>
-                                        </div><!-- /#bot-pad -->
-                                    </div><!-- /#visits -->
-                                </div>
-                            </div><!-- /.row -->
-                        </div><!-- /.container-fluid -->
+                            <div class="hidden-xs col-sm-4 col-md-3">
+                                <aside class="post-visit">
+                                    <h5>Place You May Visit</h5>
+                                    <hr>
+                                    <div class="visit-place">
+                                        <article>
+                                            <div class="visit-place">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                </a>
+                                            </div>
+                                            <div class="visit-author">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                </a>
+                                            </div>
+                                        </article>
+
+                                        <article>
+                                            <div class="visit-place">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                </a>
+                                            </div>
+                                            <div class="visit-author">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                </a>
+                                            </div>
+                                        </article>
+
+                                        <article>
+                                            <div class="visit-place">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                </a>
+                                            </div>
+                                            <div class="visit-author">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                </a>
+                                            </div>
+                                        </article>
+
+                                        <article>
+                                            <div class="visit-place">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-place.png" class="img-responsive" alt="visit photo">
+                                                </a>
+                                            </div>
+                                            <div class="visit-author">
+                                                <a href="#">
+                                                    <img src="assets/img/photo-visit-profile.png" class="img-responsive" alt="author">
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div><!-- /.visit-place -->
+                                </aside><!-- /.post-visit -->
+
+                            </div>
+                        </div><!-- /.row -->
                     </div>
 
-                    <div class="visible-lg col-lg-2">
-                        <aside id="ads">
-                        </aside><!-- /#ads -->
+                    <div class="visible-lg col-lg-3">
+                        <aside class="ads">
+                            <h5>Advertisement</h5>
+                            <hr>
+
+                            <article>
+                                <img src="assets/img/ads-1.png" alt="advertisement-1" class="img-responsive">
+                            </article>
+
+                            <article>
+                                <img src="assets/img/ads-2.png" alt="advertisement-2" class="img-responsive">
+                            </article>
+
+                            <footer class="terms-copyright">
+                                <div class="terms">
+                                    Privacy &middot; Terms &middot; Cookies &middot; Advertising &middot; More
+                                </div>
+                                <div class="copyright">
+                                    &copy; 2015 Blankrack. All rights reserved.
+                                </div>
+                            </footer>
+                        </aside><!-- /.ads -->
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->

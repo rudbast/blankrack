@@ -1,25 +1,3 @@
-$transparentPad: rgba(0, 0, 0, 0.7);
-
-/**
- * fonts
- */
-$bignoodle: "BigNoodleTitling", Impact;
-$consolas: "Consolas", monospace;
-$courier: "Courier New", monospace;
-$trebhms: "Trebuchet MS", Helvetica, sans-serif;
-
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    font-family: $trebhms;
-    background-color: #FFFFFF;
-}
-
 .alt-grid {
     [class*="col-"] {
         padding-left:0;
@@ -38,30 +16,38 @@ body {
     }
 }
 
-$topPad: 130px;
+/** background colors */
+$transparentPad: rgba(0, 0, 0, 0.7);
+
+/** fonts */
+$bignoodle: "BigNoodleTitling", Impact;
+$consolas: "Consolas", monospace;
+$courier: "Courier New", monospace;
+$trebhms: "Trebuchet MS", Helvetica, sans-serif;
+
+/**
+ * Main specs
+ */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $trebhms;
+    background-color: #E6E6E6;
+}
 
 header {
     width: 100%;
-    background-color: $transparentPad;
-    padding-bottom: $topPad + 20px;
 
     nav {
         width: 100%;
         font-family: $consolas;
         padding-left: 20px;
         padding-right: 20px;
-
-        .nav-greeting {
-            color: #FFFFFF;
-            font-weight: normal;
-            font-family: $bignoodle;
-            font-size: 18px;
-            text-transform: uppercase;
-
-            .nav-greeting-user {
-                text-align: right;
-            }
-        }
 
         .badge {
             background-color: #F2FF00;
@@ -70,37 +56,90 @@ header {
 
         #profile-photo {
             position: relative;
-            width: 128px;
-            margin-top: -50px;
+            width: 100px;
+            margin-top: -30px;
         }
 
         .nav {
-            margin-top: 50px;
+            margin-top: 30px;
             margin-bottom: -50px;
             display: inline-block;
         }
-
-        #navbar-menu-extra {
-            margin-top: 50px;
-        }
     }
 
-    .navbar {
-        min-height: 130px;
+    .nav-greeting {
+        background-color: $transparentPad;
+        color: #FFFFFF;
+        font-weight: normal;
+        font-family: $bignoodle;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 135px;
     }
 }
 
-#main-content {
+.navbar {
+    border-radius: 0;
+    min-height: 80px;
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    background-color: #000;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.white-pad {
+    background-color: #ffffff;
+    padding-left: 183px;
+    margin-top: -23px;
+
+    li {
+        display: inline;
+        position: relative;
+        padding-left: 5px;
+
+        a {
+            background-color: #212121;
+            border-radius: 0;
+            color: #ffffff;
+            display: inline-block;
+            font-family: $bignoodle;
+            padding: 10px;
+            line-height: 0.7em;
+            text-align: center;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        a.active, a:hover {
+            background-color: #444444;
+            color: #ffffff;
+        }
+    }
+}
+
+.lightgray-pad {
+    background-color: #D1D1D1;
+    height: 7px;
+}
+
+.main-content {
     width: 100%;
     height: 100%;
-    margin-top: $topPad - 10px;
+    padding-top: 90px;
 
-    #post-form {
+    .post-form {
+        background-color: #ffffff;
         padding-top: 40px;
         position: fixed;
         height: 100%;
-        padding-left: 1%;
-        padding-right: 19%;
+        padding-left: 15px;
+        padding-right: 15px;
 
         a {
             background: linear-gradient(#FFFFFF, #DEDEDE);
@@ -115,12 +154,10 @@ header {
         }
     }
 
-    #post-container {
-        background-color: #E6E6E6;
+    .post-container {
         font-family: $consolas;
         height: 100%;
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-top: 20px;
 
         .post-author {
             margin-left: -8.8%;
@@ -208,51 +245,85 @@ header {
         }
     }
 
-    #post-visit {
-        font-family: $courier;
+    .post-visit {
+        font-family: "Diavlo Light";
+        background-color: #ffffff;
         height: 100%;
         padding-top: 30px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
         text-align: center;
-
-        h4 {
-            font-size: 16px;
-            font-weight: bold;
-        }
 
         hr {
             margin-top: -5px;
+            margin-bottom: 0px;
             background-color: #B9B9B9;
             border: 0 none;
             height: 2px;
         }
 
         article {
-            padding: 10px 0px 10px 0px;
-
-            .visit-place {
-            }
+            padding: 10px 15px 10px 15px;
 
             .visit-author {
-                width: 56px;
-                margin-left: -13%;
+                width: 48px;
+                margin-left: -14%;
                 margin-top: -65px;
                 padding-bottom: 10px;
             }
         }
     }
 
-    #ads {
-        display: none;
+    .ads {
+        font-family: "Diavlo Light";
+        background-color: #ffffff;
+        height: 100%;
+        margin-left: 40px;
+        padding: 30px 15px 0px 15px;
+        position: fixed;
+        text-align: center;
+
+        hr {
+            margin-top: -5px;
+            margin-bottom: 20px;
+            background-color: #B9B9B9;
+            border: 0 none;
+            height: 2px;
+        }
     }
 }
 
-#bot-pad {
+.terms-copyright {
     width: 100%;
+    font-size: 12px;
+    text-align: center;
 
-    footer {
-        width: 100%;
-        font-family: $trebhms;
+    .terms {
+        font-family: $consolas;
+    }
+
+    .copyright {
+        font-family: Arial;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .post-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .post-container {
+        padding-left: 12%;
+        padding-right: 8%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .post-container {
+        padding-left: 15%;
+        padding-right: 10%;
     }
 }
