@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'BuxtonSketch';
+	src: url('../fonts/BuxtonSketch.eot');
+	src: local('../fonts/BuxtonSketch'), url('../fonts/BuxtonSketch.woff') format('woff'), url('../fonts/BuxtonSketch.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1049">Text with this font applied</p> */
+.fontsforweb_fontid_1049 {
+	font-family: 'BuxtonSketch' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

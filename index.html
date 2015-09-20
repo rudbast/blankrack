@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/ideal-image-slider.css">
         <link rel="stylesheet" href="assets/css/themes/default/default.css">
+        <link rel="stylesheet" href="assets/css/font.css">
         <link rel="stylesheet" href="assets/css/main.css">
 
         <!-- <link rel="stylesheet" href="assets/css/video-js.min.css"> -->
@@ -30,34 +31,40 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!-- logo -->
-                        <a class="navbar-brand" href="./">
-                            <img src="assets/img/app/icon-brand.png" alt="blankrack" width="96">
+                        <a class="navbar-brand" href="/">
+                            <img id="nav-brand-img" src="assets/img/app/icon-brand.png" alt="blankrack" width="96">
                         </a>
                     </div><!-- /.navbar-header -->
 
-                    <div class="collapse navbar-collapse" id="navbar-menu-extra">
+                    <div class="collapse navbar-collapse text-center" id="navbar-menu-extra">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <form action="" class="navbar-form">
                                     <div class="input-group">
                                         <input type="search" class="form-control input-sm" placeholder="where are you going?">
-                                        <span class="input-group-btn">
-                                            <button class="btn input-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                        </span>
+                                        <div class="input-group-btn">
+                                            <button class="btn input-sm">
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </form>
                             </li>
+
                             <li>
                                 <!-- notification badge -->
                                 <a href="#">
-                                    <span class="badge">2</span>
-                                    <img src="assets/img/app/icon-flag.png" class="nav-icon" alt="settings" width="12">
+                                    <span class="badge hidden-xs">2</span>
+                                    <img src="assets/img/app/icon-flag.png" class="nav-icon hidden-xs" alt="notification" width="12">
+                                    <span class="visible-xs">Notification</span>
                                 </a>
                             </li>
+
                             <li>
                                 <!-- settings -->
                                 <a href="#">
-                                    <img src="assets/img/app/icon-cog.png" class="nav-icon" alt="settings" width="18">
+                                    <img src="assets/img/app/icon-cog.png" class="nav-icon hidden-xs" alt="settings" width="18">
+                                    <span class="visible-xs">Settings</span>
                                 </a>
                             </li>
 
@@ -87,6 +94,55 @@
             </div>
         </header>
 
+        <div class="modals">
+            <div class="container-fluid">
+                <!-- Modal -->
+                <div class="modal fade" id="modal-post-form" tabindex="-1" role="dialog" aria-labelledby="modal-post-form-label">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form action="" class="text-center">
+                                    <div class="form-group">
+                                        <input type="text" name="location" class="form-control" placeholder="Location Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="city" class="form-control" placeholder="City">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="howToReach" class="form-control" placeholder="How To Reach">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="description" rows="3" class="form-control" placeholder="Description"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Accomodation
+                                            </label>
+
+                                            <label>
+                                                <input type="checkbox">Culinary
+                                            </label>
+
+                                            <label>
+                                                <input type="checkbox">Culture
+                                            </label>
+
+                                            <label>
+                                                <input type="checkbox">Tourism
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <input type="submit" name="submit" class="btn btn-post" value="POST YOUR JOURNEY!">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="main-content alt-grid">
             <div class="container-fluid">
                 <div class="row">
@@ -95,7 +151,7 @@
                             <div class="hidden-xs hidden-sm col-md-2">
                                 <aside class="post-form">
                                     <!-- post journey -->
-                                    <a class="btn btn-default center-block">
+                                    <a class="btn btn-default center-block" data-toggle="modal" data-target="#modal-post-form">
                                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                         Post your journey!
                                     </a>
@@ -141,21 +197,21 @@
                                                     <tr>
                                                         <td>1</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-visit">
                                                                 <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>0</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-follow">
                                                                 <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>7</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-share">
                                                                 <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
                                                             </a>
                                                         </td>
@@ -226,21 +282,21 @@
                                                     <tr>
                                                         <td>3</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-visit">
                                                                 <img src="assets/img/app/icon-bag.png" class="action-icon" alt="recommend">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>0</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-follow">
                                                                 <img src="assets/img/app/icon-person.png" class="action-icon" alt="visit">
                                                             </a>
                                                         </td>
                                                         <td></td>
                                                         <td>3</td>
                                                         <td>
-                                                            <a href="#">
+                                                            <a class="action-share">
                                                                 <img src="assets/img/app/icon-share.png" class="action-icon" alt="share">
                                                             </a>
                                                         </td>
@@ -370,6 +426,9 @@
             </div><!-- /.container-fluid -->
         </div><!-- /#main-content -->
 
+        <div class="trans-black-pad">
+        </div>
+
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ideal-image-slider.min.js"></script>
@@ -380,6 +439,48 @@
                 interval: 100000,
             });
             slider.start();
+
+            var integerCheckVisit = 0;
+            $('.action-visit').click(function () {
+                var fileImg;
+                if (integerCheckVisit++ % 2 == 0) {
+                    fileImg = 'assets/img/app/icon-bag-click.png';
+                } else {
+                    fileImg = 'assets/img/app/icon-bag.png';
+                }
+
+                $(this).children('img').attr({
+                    'src': fileImg
+                });
+            });
+
+            var integerCheckFollow = 0;
+            $('.action-follow').click(function () {
+                var fileImg;
+                if (integerCheckFollow++ % 2 == 0) {
+                    fileImg = 'assets/img/app/icon-person-click.png';
+                } else {
+                    fileImg = 'assets/img/app/icon-person.png';
+                }
+
+                $(this).children('img').attr({
+                    'src': fileImg
+                });
+            });
+
+            var integerCheckShare = 0;
+            $('.action-share').click(function () {
+                var fileImg;
+                if (integerCheckShare++ % 2 == 0) {
+                    fileImg = 'assets/img/app/icon-share-click.png';
+                } else {
+                    fileImg = 'assets/img/app/icon-share.png';
+                }
+
+                $(this).children('img').attr({
+                    'src': fileImg
+                });
+            });
         </script>
         <!-- <script src="assets/js/video.js" charset="utf-8"></script> -->
         <script src="//vjs.zencdn.net/4.12/video.js"></script>

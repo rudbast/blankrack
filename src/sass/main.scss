@@ -1,3 +1,24 @@
+@font-face {
+    font-family: BigNoodle;
+    src: url('../fonts/Big-Noodle-Titling/big_noodle_titling.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Diavlo;
+    src: url('../fonts/Diavlo_II_37/Diavlo_LIGHT_II_37.otf') format('opentype');
+}
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url('../fonts/century-gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: CenturyGothic;
+    font-weight: bold;
+    src: url('../fonts/century-gothic-bold.ttf') format('truetype');
+}
+
 .alt-grid {
     [class*="col-"] {
         padding-left:0;
@@ -20,10 +41,10 @@
 $transparentPad: rgba(0, 0, 0, 0.7);
 
 /** fonts */
-$bignoodle: "BigNoodleTitling", Impact;
-$consolas: "Consolas", monospace;
-$courier: "Courier New", monospace;
-$trebhms: "Trebuchet MS", Helvetica, sans-serif;
+$bignoodle: BigNoodle, monospace;
+$consolas: 'Consolas', monospace;
+$courier: courier, monospace;
+$trebhms: 'Trebuchet MS', Helvetica, sans-serif;
 
 /**
  * Main specs
@@ -40,48 +61,52 @@ body {
     background-color: #E6E6E6;
 }
 
-header {
-    width: 100%;
+.navbar-header {
+    height: 90px;
+}
 
-    nav {
-        width: 100%;
-        font-family: $consolas;
-        padding-left: 20px;
-        padding-right: 20px;
+nav {
+    font-family: $consolas;
+    padding-left: 20px;
+    padding-right: 20px;
 
-        .badge {
-            background-color: #F2FF00;
-            color: #000000;
-        }
-
-        #profile-photo {
-            position: relative;
-            width: 100px;
-            margin-top: -30px;
-        }
-
-        .nav {
-            margin-top: 30px;
-            margin-bottom: -50px;
-            display: inline-block;
-        }
+    .badge {
+        background-color: #F2FF00;
+        color: #000000;
     }
 
-    .nav-greeting {
-        background-color: $transparentPad;
-        color: #FFFFFF;
-        font-weight: normal;
-        font-family: $bignoodle;
-        font-size: 18px;
-        text-transform: uppercase;
-        text-align: right;
-        padding-right: 135px;
+    #profile-photo {
+        position: relative;
+        width: 100px;
+        margin-top: -30px;
     }
+
+    .nav {
+        margin-top: 30px;
+        margin-bottom: -50px;
+        display: inline-block;
+    }
+
+    .navbar-collapse.in {
+        overflow-y: visible;
+        padding-bottom: 30px;
+    }
+}
+
+.nav-greeting {
+    background-color: $transparentPad;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: $bignoodle;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 13%;
 }
 
 .navbar {
     border-radius: 0;
-    min-height: 80px;
+    min-height: 30px;
     margin-bottom: 0;
 }
 
@@ -95,7 +120,7 @@ ul {
 
 .white-pad {
     background-color: #ffffff;
-    padding-left: 183px;
+    padding-left: 20%;
     margin-top: -23px;
 
     li {
@@ -128,6 +153,59 @@ ul {
     height: 7px;
 }
 
+.modal-content {
+    border-radius: 0;
+    font-family: CenturyGothic, sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    .form-control {
+        background-color: #E6E6E6;
+        border: 0;
+        border-radius: 8px;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #000;
+        font-weight: bold;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #000;
+       opacity:  1;
+       font-weight: bold;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #000;
+       opacity:  1;
+       font-weight: bold;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #000;
+       font-weight: bold;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .checkbox label {
+        font-weight: bold;
+    }
+}
+
+.btn-post {
+    color: #fff;
+    background-color: #000;
+    border-radius: 0;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
 .main-content {
     width: 100%;
     height: 100%;
@@ -145,6 +223,8 @@ ul {
             background: linear-gradient(#FFFFFF, #DEDEDE);
             border: none;
             border-radius: 5px;
+            font-family: 'BuxtonSketch';
+            font-size: 1.2em;
             margin: 0 auto;
         }
 
@@ -167,7 +247,7 @@ ul {
                 padding-top: 20px;
                 padding-left: 16.55%;
                 margin-bottom: -9.5%;
-                font-size: 20px;
+                font-size: 1.25em;
                 font-weight: bold;
             }
 
@@ -183,7 +263,7 @@ ul {
 
             p.post-date {
                 padding: 10px 20px 10px 9.5%;
-                font-size: 14px;
+                font-size: 0.8em;
                 color: #989898;
             }
 
@@ -211,8 +291,12 @@ ul {
                         width: 20px;
                         text-align: center;
 
+                        a {
+                            cursor: pointer;
+                        }
+
                         img.action-icon {
-                            width: 150%;
+                            width: 1.5em;
                         }
                     }
                 }
@@ -221,7 +305,7 @@ ul {
                     width: 100%;
 
                     td {
-                        padding: 5px 0px 5px 5px;
+                        padding: 5px 0 5px 5px;
                     }
 
                     td.photo {
@@ -229,8 +313,9 @@ ul {
                     }
 
                     td.word {
-                        width: 90%;
+                        font-size: 0.9em;
                         padding-left: 30px;
+                        width: 90%;
                     }
 
                     tfoot td {
@@ -238,7 +323,11 @@ ul {
                     }
 
                     img.comment-photo {
-                        width: 40px;
+                        width: 3em;
+                    }
+
+                    td > input {
+                        font-size: 0.9em;
                     }
                 }
             }
@@ -246,17 +335,19 @@ ul {
     }
 
     .post-visit {
-        font-family: "Diavlo Light";
+        font-family: Diavlo;
         background-color: #ffffff;
         height: 100%;
         padding-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
         text-align: center;
+        position: fixed;
+        overflow-y: scroll;
 
         hr {
             margin-top: -5px;
-            margin-bottom: 0px;
+            margin-bottom: 0;
             background-color: #B9B9B9;
             border: 0 none;
             height: 2px;
@@ -266,8 +357,8 @@ ul {
             padding: 10px 15px 10px 15px;
 
             .visit-author {
-                width: 48px;
-                margin-left: -14%;
+                width: 3.5em;
+                margin-left: -1.75em;
                 margin-top: -65px;
                 padding-bottom: 10px;
             }
@@ -275,11 +366,11 @@ ul {
     }
 
     .ads {
-        font-family: "Diavlo Light";
+        font-family: Diavlo;
         background-color: #ffffff;
         height: 100%;
         margin-left: 40px;
-        padding: 30px 15px 0px 15px;
+        padding: 30px 15px 0 15px;
         position: fixed;
         text-align: center;
 
@@ -307,17 +398,57 @@ ul {
     }
 }
 
-@media screen and (max-width: 992px) {
+.trans-black-pad {
+    background-color: $transparentPad;
+    bottom: 0; left: 0; right: 0;
+    height: 0.8em;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+    .post-container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    #nav-brand-img {
+        width: 50px;
+    }
+
+    .navbar-header {
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .post-container {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .navbar-header {
+        height: 90px;
+    }
+
+    .post-visit {
+        margin-left: 0;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 993px) {
     .post-container {
         padding-left: 12%;
         padding-right: 8%;
+    }
+
+    .navbar-header {
+        height: 90px;
+    }
+
+    .post-visit {
+        width: 25%;
     }
 }
 
@@ -325,5 +456,14 @@ ul {
     .post-container {
         padding-left: 15%;
         padding-right: 10%;
+    }
+
+    .navbar-header {
+        height: 90px;
+    }
+
+    .post-visit {
+        margin-left: 0.5%;
+        width: 21.5%;
     }
 }
