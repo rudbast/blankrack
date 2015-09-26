@@ -156,8 +156,11 @@ ul {
 .modal-content {
     border-radius: 0;
     font-family: CenturyGothic, sans-serif;
-    padding-left: 15%;
-    padding-right: 15%;
+
+    #form-post {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
 
     .form-control {
         background-color: #E6E6E6;
