@@ -10,146 +10,146 @@
 }
 
 body {
-	background-image: url('../img/login-bg.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family : CenturyGothic;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
+    background-image: url('../img/login-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family : CenturyGothic;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .left {
-	color: #fff;
+    color: #fff;
 }
 
 .logo {
-	padding-bottom: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 .greeting {
-	font-size: 1.1em;
-	text-align: center;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 .term-privacy {
-	font-family: Consolas;
-	font-size: 0.8em;
-	text-align: center;
+    font-family: Consolas;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 a {
-	color: #CCCCCC;
-	text-decoration : none;
+    color: #CCCCCC;
+    text-decoration : none;
 }
 
 a:hover {
-	color: #FFFFFF;
-	text-decoration : none;
+    color: #FFFFFF;
+    text-decoration : none;
 }
 
 .copyright {
-	text-align: center;
-	font-size: 11px;
-	font-family: Arial;
+    text-align: center;
+    font-size: 11px;
+    font-family: Arial;
 }
 
 .loginbox {
-	border: 0;
-	border-radius: 20px;
-	background-color: rgba(226, 226, 226, 0.8);
-	margin-bottom: 5px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgba(226, 226, 226, 0.8);
+    margin-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .loginbox > .panel-body {
-	padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .textbox-input {
-	background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .form-group {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .form-group label {
-	color: #000;
-	font-size: 1.1em;
+    color: #000;
+    font-size: 1.1em;
     padding-top: 7px;
 }
 
 .btn-signin {
-	color: #FFFFFF;
-	background-color: #000000;
-	font-weight: bold;
-	font-size: 1.1em;
-	width: 100%;
-	border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .btn-signin:hover {
-	color: #FFFFFF;
-	background-color: #181818;
+    color: #FFFFFF;
+    background-color: #181818;
 }
 
 .checkbox {
-	margin-top: 5px;
-	color: #000000;
+    margin-top: 5px;
+    color: #000000;
 }
 
 .link-forget{
-	text-decoration: none;
-	color: #000000;
+    text-decoration: none;
+    color: #000000;
 }
 
 .link-forget:hover {
-	text-decoration: none;
-	color: #404040;
+    text-decoration: none;
+    color: #404040;
 }
 
 .signup {
-	color: white;
-	font-size: 14px;
+    color: white;
+    font-size: 14px;
 }
 
 .here {
-	color: #FFFF00;
-	text-decoration: none;
+    color: #FFFF00;
+    text-decoration: none;
 }
 
 .here:hover {
-	color: #FFFF80;
-	text-decoration: none;
+    color: #FFFF80;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-	body {
-		background-position: left;
-	}
+    body {
+        background-position: left;
+    }
 
-	.logo {
-		margin-top: 5em;
-	}
+    .logo {
+        margin-top: 5em;
+    }
 
-	.loginbox {
-		margin-top: 5em;
-	}
+    .loginbox {
+        margin-top: 5em;
+    }
 }
 
 @media screen and (min-width: 769px) {
-	body {
-		background-position: center;
-	}
+    body {
+        background-position: center;
+    }
 
-	.logo {
-		margin-top: 17em;
-	}
+    .logo {
+        margin-top: 17em;
+    }
 
-	.loginbox {
-		margin-top: 25em;
-	}
+    .loginbox {
+        margin-top: 25em;
+    }
 }
