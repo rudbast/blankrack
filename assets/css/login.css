@@ -60,6 +60,8 @@ a:hover {
 	border-radius: 20px;
 	background-color: rgba(226, 226, 226, 0.8);
 	margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .loginbox > .panel-body {
@@ -77,6 +79,7 @@ a:hover {
 .form-group label {
 	color: #000;
 	font-size: 1.1em;
+    padding-top: 7px;
 }
 
 .btn-signin {
