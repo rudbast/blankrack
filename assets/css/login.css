@@ -1,5 +1,10 @@
 @font-face {
     font-family: CenturyGothic;
+    src: url('../fonts/century-gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: CenturyGothic;
     font-weight: bold;
     src: url('../fonts/century-gothic-bold.ttf') format('truetype');
 }
