@@ -40,6 +40,7 @@ body {
 }
 
 a {
+    cursor: pointer;
     color: #CCCCCC;
     text-decoration : none;
 }
@@ -80,6 +81,10 @@ a:hover {
     color: #000;
     font-size: 1.1em;
     padding-top: 7px;
+}
+
+.form-control {
+    border: 0;
 }
 
 .btn-signin {
@@ -126,6 +131,47 @@ a:hover {
     text-decoration: none;
 }
 
+.modal-content {
+    border-radius: 30px;
+    background-color: rgba(226, 226, 226, 0.8);
+}
+
+.modal-content h3 {
+    font-weight: bold;
+    color: #000000;
+}
+
+.modal-content h3 small {
+    color: #000000;
+}
+
+.form-logo-container {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.form-signup ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+    font-weight: bold;
+}
+
+.form-signup :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+   font-weight: bold;
+}
+
+.form-signup ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   opacity:  1;
+   font-weight: bold;
+}
+
+.form-signup :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+   font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
     body {
         background-position: left;
@@ -146,10 +192,14 @@ a:hover {
     }
 
     .logo {
-        margin-top: 17em;
+        margin-top: 40%;
     }
 
     .loginbox {
-        margin-top: 25em;
+        margin-top: 80%;
+    }
+
+    .modal-dialog {
+        margin-top: 10%;
     }
 }
