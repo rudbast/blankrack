@@ -132,8 +132,8 @@ a:hover {
 }
 
 .modal-content {
-    border-radius: 30px;
-    background-color: rgba(226, 226, 226, 0.8);
+    border-radius: 50px;
+    background-color: rgba(225, 225, 225, 0.925);
 }
 
 .modal-content h3 {
